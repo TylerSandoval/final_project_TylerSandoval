@@ -35,7 +35,7 @@ void readCSV(const string fileIn,vector<HousePrice>& hp)
     while(in.read_row(id, number, street, city, state, postalCode, price))
     {
         HousePrice hp1(id,number,street,city,state,postalCode,price);
-        //cout << hp1 << endl;
+        cout << hp1 << endl;
         hp.push_back(hp1);
     }
 }
